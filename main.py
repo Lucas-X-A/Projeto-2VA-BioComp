@@ -8,7 +8,7 @@ except ImportError:
     print("ERRO: Não foi possível importar o algoritmo do arquivo 'algoritmo_dijkstra.py'.")
     sys.exit()
 
-def carregar_dados_string(caminho_arquivo, limite_confianca=400):
+def carregar_dados_string(caminho_arquivo, limite_confianca):
     """
     Lê o arquivo do STRING DB e monta o grafo ponderado.
     """
