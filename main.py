@@ -69,7 +69,7 @@ if __name__ == "__main__":
     if grafo_real:
         # Exibe exemplos para ajudar a escolher
         ids_disponiveis = list(grafo_real.keys())
-        print("\n--- Exemplos de Proteínas disponíveis ---")
+        print("\nExemplos de Proteínas disponíveis")
         print(f"Total: {len(ids_disponiveis)}")
         print(f"Primeiros 10 IDs: {ids_disponiveis[:10]}")
         
@@ -77,7 +77,7 @@ if __name__ == "__main__":
         origem = ids_disponiveis[0] 
         destino = ids_disponiveis[min(10, len(ids_disponiveis)-1)] # Pega o 10º ou último
         
-        print(f"\n--- Calculando Rota: {origem}  -->  {destino} ---")
+        print(f"\nCalculando Rota: {origem}  -->  {destino}")
         
         # Chama a função importada
         caminho, custo = dijkstra_sinalizacao(grafo_real, origem, destino)
