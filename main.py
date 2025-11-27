@@ -101,7 +101,7 @@ def encontrar_par(grafo):
         # Se essa origem consegue chegar em lugares distantes, escolhe um destino aleatório
         if alcançaveis_distantes:
             destino = random.choice(alcançaveis_distantes)
-            print(f"\nPar encontrado após busca: {origem} -> {destino}")
+            print(f"\nPar selecionado: {origem} -> {destino}")
             return origem, destino
 
     # Se não achar nenhum par, escolhe aleatoriamente
