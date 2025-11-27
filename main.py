@@ -114,7 +114,7 @@ def encontrar_par(grafo):
 if __name__ == "__main__":
 
     # Nome do arquivo baixado
-    arquivo_dados = "protein_Mycoplasmagenitalium.txt" 
+    arquivo_dados = "protein_Mgen.txt" 
     
     # Limite 700 considera apenas "Alta Confiança". Se não achar caminhos, baixar pra 400.
     limite = 700 
