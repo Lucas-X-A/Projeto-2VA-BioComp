@@ -22,11 +22,11 @@ def dijkstra_sinalizacao(grafo, proteina_origem, proteina_destino):
         # Remove a proteína com o menor custo atual da fila
         custo_atual, nodo_atual = heapq.heappop(fila_prioridade)
         
-        # Se chegamos ao destino, podemos parar (opcional, mas otimiza)
+        # Se chegou ao destino, para o loop
         if nodo_atual == proteina_destino:
             break
         
-        # Se o custo retirado da fila for maior que o já conhecido, ignoramos
+        # Se o custo retirado da fila for maior que o já conhecido, ignora
         if custo_atual > distancias[nodo_atual]:
             continue
         
@@ -34,7 +34,7 @@ def dijkstra_sinalizacao(grafo, proteina_origem, proteina_destino):
         for vizinho, peso_aresta in grafo[nodo_atual].items():
             distancia_nova = custo_atual + peso_aresta
             
-            # Se encontramos um caminho mais curto para o vizinho
+            # Se encontrou um caminho mais curto para o vizinho, atualiza
             if distancia_nova < distancias[vizinho]:
                 distancias[vizinho] = distancia_nova
                 predecessores[vizinho] = nodo_atual
